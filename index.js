@@ -1,1 +1,1 @@
-console.log('[READY]', 'I Am Ready!')
+console.log('I Am Ready!')
