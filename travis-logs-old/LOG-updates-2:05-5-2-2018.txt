@@ -1,0 +1,68 @@
+$ git clone --depth=50 --branch=master https://github.com/BurdenedDev/Burdeneds-Website.git BurdenedDev/Burdeneds-Website
+Cloning into 'BurdenedDev/Burdeneds-Website'...
+remote: Counting objects: 58, done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 58 (delta 19), reused 13 (delta 2), pack-reused 0
+Unpacking objects: 100% (58/58), done.
+$ cd BurdenedDev/Burdeneds-Website
+$ git checkout -qf 4d1cfc5e391723ac569fa9cc4d217456b59946e0
+$ export PATH=./node_modules/.bin:$PATH
+Updating nvm
+nvm.install
+2.69s$ nvm install 8
+Downloading and installing node v8.11.1...
+Downloading https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz...
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v8.11.1 (npm v5.6.0)
+cache.1
+Setting up build cache
+$ export CASHER_DIR=$HOME/.casher
+0.05s$ Installing caching utilities
+0.00s
+10.67sattempting to download cache archive
+fetching master/cache-linux-trusty-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--node-8.tgz
+found cache
+0.01s
+2.68sadding /home/travis/build/BurdenedDev/Burdeneds-Website/node_modules to cache
+creating directory /home/travis/build/BurdenedDev/Burdeneds-Website/node_modules
+$ node --version
+v8.11.1
+$ npm --version
+5.6.0
+$ nvm --version
+0.33.11
+install
+NaNs$ npm install
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN prism-media@0.2.1 requires a peer of opusscript@^0.0.4 but none is installed. You must install peer dependencies yourself.
+npm WARN prism-media@0.2.1 requires a peer of node-opus@^0.2.7 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of bufferutil@^3.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of erlpack@discordapp/erlpack but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of libsodium-wrappers@^0.7.0 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of sodium@^2.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of uws@^9.14.0 but none is installed. You must install peer dependencies yourself.
+npm WARN discord.js@12.0.0-dev requires a peer of zlib-sync@^0.1.0 but none is installed. You must install peer dependencies yourself.
+up to date in 5.763s
+1.00s$ npm test
+> burdeneds-website@2.0.0 test /home/travis/build/BurdenedDev/Burdeneds-Website
+> eslint .
+/home/travis/build/BurdenedDev/Burdeneds-Website/index.js
+  1:23  error  Strings must use doublequote                  quotes
+  1:33  error  Missing semicolon                             semi
+  2:20  error  Missing semicolon                             semi
+  4:9   error  Strings must use doublequote                  quotes
+  4:22  error  Unexpected space before function parentheses  space-before-function-paren
+  5:12  error  Strings must use doublequote                  quotes
+  5:26  error  Missing semicolon                             semi
+  6:3   error  Missing semicolon                             semi
+  8:17  error  Missing semicolon                             semi
+✖ 9 problems (9 errors, 0 warnings)
+  9 errors, 0 warnings potentially fixable with the `--fix` option.
+npm ERR! Test failed.  See above for more details.
+The command "npm test" exited with 1.
+cache.2
+store build cache
+0.01s
+2.45snothing changed, not updating cache
+Done. Your build exited with 1.
