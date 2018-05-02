@@ -1,0 +1,23 @@
+{
+  "os": "linux",
+  "dist": "trusty",
+  "jobs": {
+    "include": [
+      {
+        "stage": "test",
+        "script": "npm test"
+      }
+    ]
+  },
+  "cache": {
+    "directories": [
+      "node_modules"
+    ]
+  },
+  "group": "stable",
+  "stage": "test",
+  "script": "npm test",
+  "install": "npm install",
+  "node_js": "8",
+  "language": "node_js"
+}
